@@ -2,10 +2,10 @@ const html = document.querySelector('html')
 const focoBt = document.querySelector('.app__card-button--foco')
 const curtoBt = document.querySelector('.app__card-button--curto')
 const longoBt = document.querySelector('.app__card-button--longo')
-//const iniciarBt = document.querySelector('.app__card-primary-button')
+const iniciarBt = document.querySelector('.app__card-primary-button')
 const botoes = document.querySelectorAll('.app__card-button')
 const musicaFocoInput = document.querySelector('#alternar-musica')
-const musica = new Audio('/sons/luna-rise-part-one.mp3')
+const musica = new Audio('../sons/luna-rise-part-one.mp3')
 musica.loop = true
 
 
@@ -47,7 +47,7 @@ function alterarContexto(contexto) {
         contexto.classList.remove('active')
     })
     html.setAttribute('data-contexto', contexto)
-    banner.setAttribute('src', `/imagens/${contexto}.png`)
+    banner.setAttribute('src', `../imagens/${contexto}.png`)
     switch (contexto) {
         case "foco":
             titulo.innerHTML = `
