@@ -35,7 +35,7 @@ html {
 
 body {
     min-height: 100vh;
-    background: url("./imagens/pattern.png");
+    background: url("../imagens/pattern.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2.4rem;
     margin: 8rem 0;
     width: 59rem;
-    height: 23rem;
+    height: auto;
     max-width: 90%;
 }
 
@@ -146,8 +146,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__card-primary-button {
+    position: relative;
     padding: 0.8rem 1.2rem;
     width: 12rem;
+    margin-bottom: 3rem;
     color: var(--color-secondary);
     border: none;
     cursor: pointer;
@@ -159,11 +161,9 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    position: relative;
     top: 2.5rem;
-    width: fit-content;
-    text-shadow: #504f5a 1px;
 }
+
 
 .app__card-primary-button:hover {
     box-shadow: 5px 5px 4px var(--shadow);
@@ -262,6 +262,13 @@ h1, h2, h3, h4, h5, h6 {
     .app__card-timer {
         font-size: 6rem;
     }
+
+    .app__card {
+  
+        height: auto;
+       
+    }
+
 }
 
 
@@ -400,13 +407,3 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and max-width = 900px {
-
-    .app__card {
-  
-        height: auto;
-       
-    }
-
-    
-}
